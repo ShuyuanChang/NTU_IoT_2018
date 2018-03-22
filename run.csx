@@ -68,20 +68,20 @@ static async Task MakeAnalysisRequest(CloudBlockBlob myBlob, TraceWriter log)
 
             // Save the information to Queue
             // This has to be encrypted. 
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=skyeyeshandler2017;AccountKey=DsYGpc9HuiKB0utQcKeUjyhY3mdfY1PKDuhBwam5X/QUZLffn+et/+pfHJhH8L0+SVBUhd4DfrRdn1caKLf2hA==");
+            //CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=skyeyeshandler2017;AccountKey=DsYGpc9HuiKB0utQcKeUjyhY3mdfY1PKDuhBwam5X/QUZLffn+et/+pfHJhH8L0+SVBUhd4DfrRdn1caKLf2hA==");
 
             // Create the queue client.
-            CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
+            //CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
 
             // Retrieve a reference to a queue.
-            CloudQueue queue = queueClient.GetQueueReference("sms");
+            //CloudQueue queue = queueClient.GetQueueReference("sms");
 
             // Create the queue if it doesn't already exist.
-            queue.CreateIfNotExists();
+            //queue.CreateIfNotExists();
 
             // Create a message and add it to the queue.
-            CloudQueueMessage message = new CloudQueueMessage(jsonData["description"]["captions"]);
-            queue.AddMessage(message);
+            //CloudQueueMessage message = new CloudQueueMessage(jsonData["description"]["captions"]);
+            //queue.AddMessage(message);
         }
     }
 }

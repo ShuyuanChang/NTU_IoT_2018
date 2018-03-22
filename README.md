@@ -10,3 +10,5 @@ Class materials for NTU IoT Class
 2. Raspberry 鏡頭設置: http://yehnan.blogspot.tw/2013/05/raspberry-pi.html?m=1
 
 3. Blob Storage Event:https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-event-overview
+
+4. Create Function App: https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function
